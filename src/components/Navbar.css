@@ -1,17 +1,25 @@
 .top-menu{
-    background-color: white;
+    /* background-color: white; */
+}
+.logo{
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 10px;
 }
 .div-toggler{  
     position: absolute;
     right: 0;
-    
+    display: none;
     
 }
 .navbar{
     background-color: #000000;
     width: 100%;
     height: 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 5% 20% 65% 5%;
     justify-content: start;
     align-items: center;
     position: relative;
@@ -83,4 +91,37 @@
 
 span {
     /* margin-left: 16px; */
+}
+
+.menu1{
+    display: block;
+    color: white;
+    background-color: yellowgreen;
+    
+}
+.menu2{
+    display: block;
+    color: white;
+    background-color: tomato;
+    font-size: 2em;
+}
+.menu3{
+    display: block;
+    color: white;
+    background-color: thistle;
+}
+
+@media screen and (max-width: 580px) {
+    .div-toggler{  
+        display: block;
+    }
+
+    .menu3{
+        display: none;
+    }
+
+    .navbar{
+        height: 70px;
+    }
+    
 }

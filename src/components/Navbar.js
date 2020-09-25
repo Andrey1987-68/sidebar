@@ -4,6 +4,7 @@ import * as AiIcons from "react-icons/ai";
 import { Link } from 'react-router-dom'
 import {SidebarData} from './SidebarData'
 import './Navbar.css'
+import logo from './img/logo.svg'
 function Navbar() {
     const [sidebar,setSidebar]=useState(false)
 
@@ -11,9 +12,15 @@ function Navbar() {
     return (
         <>
           <div className="navbar">
-            <div className="top-menu">
-                CAYMAN automation
+            <div className='menu1'>
+                <span>EPIC</span>
             </div>  
+            <div className='menu2'>
+                <span>EPIC</span>
+            </div>  
+            <div className='menu3'>
+                <span>test</span>
+            </div>
             <div className="div-toggler">
             <Link to="#" className="menu-bars" >
                   <FaIcons.FaBars onClick={showSidebar}/>   
@@ -34,7 +41,6 @@ function Navbar() {
                       return (
                           <li key={index} className={item.cName}>
                               <Link to={item.path}>
-                                
                                   <span className="linspan">{item.title}</span>
                               </Link>
                           </li>
