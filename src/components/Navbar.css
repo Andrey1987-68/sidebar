@@ -19,7 +19,7 @@
     width: 100%;
     height: 40px;
     display: grid;
-    grid-template-columns: 5% 20% 65% 5%;
+    grid-template-columns: 5% 20% 60% 10%;
     justify-content: start;
     align-items: center;
     position: relative;
@@ -96,19 +96,33 @@ span {
 .menu1{
     display: block;
     color: white;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     
 }
 .menu2{
     display: block;
+   
     color: white;
-    background-color: tomato;
+    /* background-color: tomato;   */
     font-size: 2em;
+    padding: 0;
+    margin: 0;
+    
 }
+.menu2>img{
+    width: 30px;
+    display: block;
+}
+
 .menu3{
     display: block;
     color: white;
-    background-color: thistle;
+    background-color: black;
+}
+
+.menu3-ul>li{
+    display: inline;
+   
 }
 
 @media screen and (max-width: 580px) {

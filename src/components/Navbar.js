@@ -4,7 +4,7 @@ import * as AiIcons from "react-icons/ai";
 import { Link } from 'react-router-dom'
 import {SidebarData} from './SidebarData'
 import './Navbar.css'
-import logo from './img/logo.svg'
+import logo from '../img/git.svg'
 function Navbar() {
     const [sidebar,setSidebar]=useState(false)
 
@@ -13,14 +13,14 @@ function Navbar() {
         <>
           <div className="navbar">
             <div className='menu1'>
-                <span>OT</span>
+                {/* <span>OT</span> */}
             </div>  
             <div className='menu2'>
-                <span>LOGO</span>
+                <img src={logo}></img>
             </div>  
             <div className='menu3'>
                 <nav>
-                    <ul>
+                    <ul className='menu3-ul'>
                     {SidebarData.map((item,index)=>{
                       return (
                           <li key={index} className={item.cName}>
