@@ -13,13 +13,25 @@ function Navbar() {
         <>
           <div className="navbar">
             <div className='menu1'>
-                <span>EPIC</span>
+                <span>OT</span>
             </div>  
             <div className='menu2'>
-                <span>EPIC</span>
+                <span>LOGO</span>
             </div>  
             <div className='menu3'>
-                <span>test</span>
+                <nav>
+                    <ul>
+                    {SidebarData.map((item,index)=>{
+                      return (
+                          <li key={index} className={item.cName}>
+                              <Link to={item.path}>
+                                  <span className="linspan">{item.title}</span>
+                              </Link>
+                          </li>
+                      )
+                  })}
+                    </ul>
+                </nav>
             </div>
             <div className="div-toggler">
             <Link to="#" className="menu-bars" >
