@@ -1,5 +1,5 @@
 .mainWindow {
-    background-color:coral;
+    background-color: white;
     height: 100%;
     width: 100%;
     font-size: 16px;
@@ -8,8 +8,33 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(500px, auto);
     border: black solid 0.5px;
+    transition: 1s;
 }
 
+.mainWindow2 {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-auto-rows: minmax(500px, auto);
+    border: black solid 0.5px;
+    transition: 1s;
+}
+
+.colom{
+    background-color: #262629;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: #5BFFDA;
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    grid-auto-rows: minmax(500px, auto);
+    border: #5BFFDA solid 1px;
+}
 
 @media screen and (max-width: 580px) {
     .mainWindow {

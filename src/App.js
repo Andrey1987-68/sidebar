@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import Navbar from './components/Navbar'
+import {Navbar} from './components/Navbar'
 import MainWindow from './components/mainWindow'
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function App(){
                 <Route path='/' />
             </Switch>
         </Router>
-        <MainWindow />
+        {/* <MainWindow /> */}
         </>
     )
 }
