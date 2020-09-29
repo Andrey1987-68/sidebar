@@ -1,5 +1,6 @@
 import React from 'react'
 import './mainWindow.css'
+import $ from "jquery";
 function MainWindow(props){
     console.log(props.value)
     let a=(
@@ -12,6 +13,9 @@ function MainWindow(props){
     let b=(
         <div className='mainWindow2'>
             <div className='colom'>{String(props.value)}</div>
+            <div className='disp colom'> 
+             <iframe className='disp'  src="http://teplotehnika68.ru/radugnoe/pic.php" frameBorder="0"></iframe>
+            </div>
         </div>
     )
     let c;

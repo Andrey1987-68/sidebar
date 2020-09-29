@@ -18,7 +18,7 @@
     font-size: 16px;
     color: black;
     display: grid;
-    grid-template-columns: 1fr  ;
+    grid-template-columns: 1fr 1fr ;
     grid-auto-rows: minmax(500px, auto);
     border: black solid 0.5px;
     transition: 1s;
@@ -30,14 +30,22 @@
     width: 100%;
     font-size: 16px;
     color: #5BFFDA;
-    display: grid;
-    grid-template-columns: 1fr  2fr;
+   
     grid-auto-rows: minmax(500px, auto);
     border: #5BFFDA solid 1px;
 }
 
+.disp{
+    background-color: #262629;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 580px) {
     .mainWindow {
+        grid-template-columns: 1fr;
+    }
+    .mainWindow2 {
         grid-template-columns: 1fr;
     }
 }
