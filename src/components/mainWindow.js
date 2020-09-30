@@ -13,9 +13,16 @@ function MainWindow(props){
     let b=(
         <div className='mainWindow2'>
             <div className='colom'>{String(props.value)}</div>
-            <div className='disp colom'> 
+            <div>
              <iframe className='disp'  src="http://teplotehnika68.ru/radugnoe/pic.php" frameBorder="0"></iframe>
+             <p className='disptext'>Диспетчеризация реального объекта. Система мониторинга любой сложности. Перед вами реальный объект.
+                модульная котельная, город Тамбов. Сигнал передается через канал gprs каждые 10 секунд, данные складываются
+                в базу данных и далее отображаются в виде мнемосхемы.</p>
             </div>
+             
+             
+       
+    
         </div>
     )
     let c;

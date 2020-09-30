@@ -60,6 +60,11 @@ export function Navbar() {
                           <AiIcons.AiOutlineClose onClick={showSidebar}/>
                       </Link>
                   </li>
+                  <li className='nav-text'>
+                           <Link to='#'>
+                               <span className="linspan" onClick={showWindow}>Дисп</span>
+                            </Link>
+                          </li>
                   {SidebarData.map((item,index)=>{
                       return (
                           <li key={index} className={item.cName}>

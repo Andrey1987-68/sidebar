@@ -136,6 +136,20 @@ span {
 
     .navbar{
         height: 70px;
+    }    
+}
+
+
+@media screen and (max-width: 720px) {
+    .div-toggler{  
+        display: block;
     }
-    
+
+    .menu3{
+        display: none;
+    }
+
+    .navbar{
+        height: 70px;
+    }
 }
